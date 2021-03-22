@@ -7,12 +7,24 @@ namespace Assets.Scripts
     {
         public Text ScoreText;
 
+        public Sprite BigSprite;
+        private bool _isBig;
+
+        void Start()
+        {
+            _isBig = Random.value < 0.1f;
+            if (_isBig)
+            {
+                GetComponent<SpriteRenderer>().sprite = BigSprite;
+            }
+        }
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.name == "PacMan")
             {
                 Destroy(gameObject);
-                GameState.UpdateScore(ScoreText, 1);
+                GameState.UpdateScore(ScoreText, _isBig ? 5 : 1);
             }
         }
     }
