@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &8353984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &12959783
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -395,6 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &13212933
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -508,6 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &17118722
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -621,6 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &22620168
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -734,6 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &23890894
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -847,6 +853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &25206745
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -960,6 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &57258132
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1073,6 +1081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &59968047
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1186,6 +1195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &65565470
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1299,6 +1309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &72746081
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1412,6 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &95718018
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1555,6 +1567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &104823221
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1668,6 +1681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &115995110
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1781,6 +1795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &123800048
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1894,6 +1909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &126581431
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2007,6 +2023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &146985852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2120,6 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &159636823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2233,6 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &162997201
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2346,6 +2365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &178040545
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2459,6 +2479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &188707738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2618,6 +2639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &206743078
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2731,6 +2753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &207410306
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6227,6 +6250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &230609182
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6340,6 +6364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &241417205
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6453,6 +6478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &246543863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6566,6 +6592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &248625016
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6679,6 +6706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &266855456
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6792,6 +6820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &270006150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6905,6 +6934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &272311158
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7018,6 +7048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &281716836
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7131,6 +7162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &287749499
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7244,6 +7276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &291634231
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7357,6 +7390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &299082049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7470,6 +7504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &305285983
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7583,6 +7618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &307976991
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7696,6 +7732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &312354226
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7809,6 +7846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &315928497
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7922,6 +7960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &322386122
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8035,6 +8074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &326385809
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8148,6 +8188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &328064313
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8261,6 +8302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &336404142
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8374,6 +8416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &341631023
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8487,6 +8530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &344523657
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8600,6 +8644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &352330304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8713,6 +8758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &354015919
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8826,6 +8872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &357845548
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -8939,6 +8986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &380787267
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9052,6 +9100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &380828272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9165,6 +9214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &390784775
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9278,6 +9328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &398326812
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9391,6 +9442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &399124194
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9504,6 +9556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &408398550
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9617,6 +9670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &410692765
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9730,6 +9784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &411259304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9843,6 +9898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &415039347
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9956,6 +10012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &415109841
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10069,6 +10126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &421350192
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10182,6 +10240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &430749272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10295,6 +10354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &431004163
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10408,6 +10468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &440513111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10521,6 +10582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &440673515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10634,6 +10696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &451789044
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10747,6 +10810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &469274135
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10860,6 +10924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &471154315
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10973,6 +11038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &472332178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11086,6 +11152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &475606243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11199,6 +11266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &479575372
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11312,6 +11380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &491332875
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11425,6 +11494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &492557994
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11538,6 +11608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &493173058
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11681,6 +11752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &512642463
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11877,6 +11949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &526656589
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12020,6 +12093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &534080671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12133,6 +12207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &542221564
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12246,6 +12321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &551650198
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12359,6 +12435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &560225081
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12472,6 +12549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &561193767
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12585,6 +12663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &576433334
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12698,6 +12777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &583109652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12811,6 +12891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &584983730
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12924,6 +13005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &601273515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13088,6 +13170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &608917769
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13150,6 +13233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &612995252
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13263,6 +13347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &629983047
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13376,6 +13461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &631831730
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13489,6 +13575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &634667772
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13602,6 +13689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &644398670
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13715,6 +13803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &650496469
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13828,6 +13917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &652830405
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13941,6 +14031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &653559413
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14054,6 +14145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &656867477
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14167,6 +14259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &664889153
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14280,6 +14373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &666160178
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14393,6 +14487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &669387391
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14506,6 +14601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &674855057
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14619,6 +14715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &678937517
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14732,6 +14829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &684086522
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14845,6 +14943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &698801145
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15313,6 +15412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &706062179
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15426,6 +15526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &706380931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15539,6 +15640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &710035611
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15652,6 +15754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &710113328
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15800,6 +15903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &715225194
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15913,6 +16017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &719774349
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16026,6 +16131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &726711538
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16139,6 +16245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &729958706
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16252,6 +16359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &743558819
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16365,6 +16473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &745602644
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16478,6 +16587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &750869354
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16591,6 +16701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &767195012
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16804,6 +16915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &778817515
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16917,6 +17029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &780523102
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17030,6 +17143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &809190364
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17143,6 +17257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &842514368
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17256,6 +17371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &846580650
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17369,6 +17485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &852767438
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17482,6 +17599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &853249066
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17595,6 +17713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &863256693
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17708,6 +17827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &865633186
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17821,6 +17941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &871737364
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17934,6 +18055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &871890773
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18047,6 +18169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &875928463
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18160,6 +18283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &876375622
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18273,6 +18397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &881618485
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18386,6 +18511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &895319883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18499,6 +18625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &907317704
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18612,6 +18739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &919353454
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18725,6 +18853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &932942655
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18838,6 +18967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &936972778
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18951,6 +19081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &937106875
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19064,6 +19195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &939048384
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19177,6 +19309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &939331434
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19290,6 +19423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &944539510
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19403,6 +19537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &952099811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19516,6 +19651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &956670272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19629,6 +19765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &958606909
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19742,6 +19879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &963101562
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19855,6 +19993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &969286784
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19968,6 +20107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &969998275
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20081,6 +20221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &971174791
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20194,6 +20335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &974508907
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20307,6 +20449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &975202898
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20420,6 +20563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &975355480
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20533,6 +20677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &994273346
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20646,6 +20791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1021418272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20759,6 +20905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1024164444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20872,6 +21019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1026269578
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21141,6 +21289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1055021437
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21254,6 +21403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1055985328
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21367,6 +21517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1067763700
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21480,6 +21631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1071181554
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21593,6 +21745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1073007768
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21706,6 +21859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1085725094
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21819,6 +21973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1089244247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -21932,6 +22087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1089835149
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22045,6 +22201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1093108146
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22158,6 +22315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1103739470
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22271,6 +22429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1134940988
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22384,6 +22543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1136317883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22497,6 +22657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1146914757
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22610,6 +22771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1149844257
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22723,6 +22885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1155038863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22836,6 +22999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1156713799
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22949,6 +23113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1157503053
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23062,6 +23227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1166083142
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23175,6 +23341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1195628035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23288,6 +23455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1214286247
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23401,6 +23569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1214335720
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23514,6 +23683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1216599465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23627,6 +23797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1217449755
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23806,6 +23977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1236653155
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23919,6 +24091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1241088250
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24032,6 +24205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1261543015
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24145,6 +24319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1272127376
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24258,6 +24433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1275055280
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24371,6 +24547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1281903917
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24484,6 +24661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1289354742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24597,6 +24775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1295322802
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24710,6 +24889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1307458238
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24823,6 +25003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1312145501
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24936,6 +25117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1312854135
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25049,6 +25231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1321634217
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25162,6 +25345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1324280502
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25275,6 +25459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1324302943
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25388,6 +25573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1326529933
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25501,6 +25687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1330938996
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25614,6 +25801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1331325795
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25727,6 +25915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1332359734
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25840,6 +26029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1334045269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -25953,6 +26143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1334116171
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26066,6 +26257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1338197403
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26179,6 +26371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1338679581
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26292,6 +26485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1341508884
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26405,6 +26599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1347643102
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26518,6 +26713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1352015713
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26631,6 +26827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1354257711
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26744,6 +26941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1360475894
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26857,6 +27055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1369509984
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27131,6 +27330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1404507498
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27244,6 +27444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1406193996
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27357,6 +27558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1414161947
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27470,6 +27672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1418691505
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27583,6 +27786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1439285363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27696,6 +27900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1443197255
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27809,6 +28014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1462645581
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27922,6 +28128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1464953663
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28035,6 +28242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1465675108
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28148,6 +28356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1468318854
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28261,6 +28470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1475928024
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28374,6 +28584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1484950012
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28487,6 +28698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1485772112
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28600,6 +28812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1488344243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28713,6 +28926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1508750123
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28826,6 +29040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1510046163
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28939,6 +29154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1512736883
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29052,6 +29268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1513170880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29165,6 +29382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1520657885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29278,6 +29496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1521157165
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29391,6 +29610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1527309873
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29504,6 +29724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1536112344
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29617,6 +29838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1547529857
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29730,6 +29952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1547812804
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29843,6 +30066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1558262858
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29956,6 +30180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1564827276
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30069,6 +30294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1567636483
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30182,6 +30408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1574979237
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30295,6 +30522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1576734833
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30408,6 +30636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1577427478
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30521,6 +30750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1577584312
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30634,6 +30864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1581362493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30747,6 +30978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1588162219
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30860,6 +31092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1604837203
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30973,6 +31206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1607084811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31086,6 +31320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1608784560
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31199,6 +31434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1621102923
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31312,6 +31548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1625755744
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31455,6 +31692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1650941952
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31568,6 +31806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1651061814
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31681,6 +31920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1654835563
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31794,6 +32034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1660356294
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31907,6 +32148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1663850765
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32020,6 +32262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1678157221
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32133,6 +32376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1679625812
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32246,6 +32490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1691806555
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32359,6 +32604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1692962588
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32472,6 +32718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1695830965
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32585,6 +32832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1699935344
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32698,6 +32946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1702173027
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32811,6 +33060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1706795504
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32924,6 +33174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1708538089
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33037,6 +33288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1709332353
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33150,6 +33402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1710907147
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33263,6 +33516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1711098546
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33376,6 +33630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1726618633
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33489,6 +33744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1728165288
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33602,6 +33858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1733356693
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33715,6 +33972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1734635244
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33828,6 +34086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1735432049
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33941,6 +34200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1736600494
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34054,6 +34314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1742858016
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34167,6 +34428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1750102786
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34280,6 +34542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1751387289
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34393,6 +34656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1762320255
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34506,6 +34770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1765698521
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34619,6 +34884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1767865613
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34732,6 +34998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1769300363
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34845,6 +35112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1771396063
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34958,6 +35226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1786701608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35071,6 +35340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1792650460
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35184,6 +35454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1792946689
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35297,6 +35568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1798900540
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35410,6 +35682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1800494305
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35523,6 +35796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1801194499
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35636,6 +35910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1809165229
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35749,6 +36024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1812364932
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35862,6 +36138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1818400909
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -35975,6 +36252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1819108651
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36076,8 +36354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -57.5}
-  m_SizeDelta: {x: 170, y: 115}
+  m_AnchoredPosition: {x: 122.20001, y: -57.5}
+  m_SizeDelta: {x: 225, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821028746
 MonoBehaviour:
@@ -36106,7 +36384,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 100
-    m_Alignment: 0
+    m_Alignment: 2
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -36167,6 +36445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1827092184
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36280,6 +36559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1836800904
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36393,6 +36673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1855810921
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36506,6 +36787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1858241739
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36619,6 +36901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1858683050
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36732,6 +37015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1869763544
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36845,6 +37129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1880441950
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36958,6 +37243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1883519042
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37071,6 +37357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1884518020
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37184,6 +37471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1885938963
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37297,6 +37585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1888169954
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37410,6 +37699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1891093470
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37523,6 +37813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1892934399
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37636,6 +37927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1893008183
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37749,6 +38041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1894680733
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37862,6 +38155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1900658457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37975,6 +38269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1901553272
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38088,6 +38383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1901769854
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38201,6 +38497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1906062209
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38314,6 +38611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1907774367
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38427,6 +38725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1919195622
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38540,6 +38839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1924168686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38653,6 +38953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1939925172
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38766,6 +39067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1948386522
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38879,6 +39181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1953152838
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38992,6 +39295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1953315516
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39105,6 +39409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1956167713
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39218,6 +39523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1956674104
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39361,6 +39667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1988893130
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39474,6 +39781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &1989312493
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39587,6 +39895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2009318111
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39700,6 +40009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2014400671
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39813,6 +40123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2033866754
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39926,6 +40237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2033982519
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40039,6 +40351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2050614393
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40152,6 +40465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2067680670
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40265,6 +40579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2074552170
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40378,6 +40693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2076244891
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40491,6 +40807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2079744951
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40604,6 +40921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2088632188
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40717,6 +41035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2096057162
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40830,6 +41149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2100496771
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40943,6 +41263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2119738255
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41056,6 +41377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2121644766
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41169,6 +41491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2129501807
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41282,6 +41605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2135654608
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -41395,6 +41719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 1821028746}
+  BigSprite: {fileID: 21300000, guid: 7ded23d2b9b502640ac93fb22086bea5, type: 3}
 --- !u!58 &2146217512
 CircleCollider2D:
   m_ObjectHideFlags: 0
