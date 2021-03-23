@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
 {
-    public class Menu : MonoBehaviour
+    public class MainMenu : MonoBehaviour
     {
         public void StartGame()
         {
-            SceneManager.LoadScene("Main");
+            SceneManager.LoadScene("Game");
         }
 
         public void Exit()
