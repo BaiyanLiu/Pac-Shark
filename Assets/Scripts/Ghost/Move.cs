@@ -19,13 +19,5 @@ namespace Assets.Scripts.Ghost
                 _curr = (_curr + 1) % Waypoints.Length;
             }
         }
-
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.name == "PacMan")
-            {
-                Destroy(collision.gameObject);
-            }
-        }
     }
 }

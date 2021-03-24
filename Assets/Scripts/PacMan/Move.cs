@@ -7,6 +7,8 @@ namespace Assets.Scripts.PacMan
         public float Speed = 0.4f;
         public Vector2 Dest = Vector2.zero;
 
+        private bool _isDead;
+
         private void Start()
         {
             Dest = transform.position;
@@ -14,6 +16,11 @@ namespace Assets.Scripts.PacMan
 
         private void FixedUpdate()
         {
+            if (_isDead)
+            {
+                return;
+            }
+
             var p = Vector2.MoveTowards(transform.position, Dest, Speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
@@ -47,6 +54,15 @@ namespace Assets.Scripts.PacMan
             Vector2 pos = transform.position;
             var hit = Physics2D.CircleCast(pos, GetComponent<CircleCollider2D>().radius, dir, 1f, 1 << 31);
             return hit.collider == null;
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.name == "Ghost")
+            {
+                GetComponent<Animator>().SetBool("Dead", true);
+                _isDead = true;
+            }
         }
     }
 }
