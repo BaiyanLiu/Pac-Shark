@@ -34,13 +34,13 @@ namespace Assets.Scripts.PacMan
                 {
                     Dest = (Vector2) transform.position + Vector2.right;
                 }
-                if (Input.GetKey(KeyCode.DownArrow) && IsValid(-Vector2.up))
+                if (Input.GetKey(KeyCode.DownArrow) && IsValid(Vector2.down))
                 {
-                    Dest = (Vector2) transform.position - Vector2.up;
+                    Dest = (Vector2) transform.position + Vector2.down;
                 }
-                if (Input.GetKey(KeyCode.LeftArrow) && IsValid(-Vector2.right))
+                if (Input.GetKey(KeyCode.LeftArrow) && IsValid(Vector2.left))
                 {
-                    Dest = (Vector2) transform.position - Vector2.right;
+                    Dest = (Vector2) transform.position + Vector2.left;
                 }
             }
 
@@ -62,6 +62,16 @@ namespace Assets.Scripts.PacMan
             {
                 GetComponent<Animator>().SetBool("Dead", true);
                 _isDead = true;
+            }
+            else if (collision.name == "Tunnel Left")
+            {
+                transform.position = new Vector2(17f, 0f);
+                Dest = (Vector2) transform.position + Vector2.left;
+            }
+            else if (collision.name == "Tunnel Right")
+            {
+                transform.position = new Vector2(-16f, 0f);
+                Dest = (Vector2)transform.position + Vector2.right;
             }
         }
     }
