@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -7,10 +8,13 @@ namespace Assets.Scripts.PacMan
         public float Speed = 0.4f;
         public Vector2 Dest = Vector2.zero;
 
+        private GameState _gameState;
+
         private bool _isDead;
 
         private void Start()
         {
+            _gameState = gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
             Dest = transform.position;
         }
 
@@ -44,7 +48,7 @@ namespace Assets.Scripts.PacMan
                 }
             }
 
-            var dir = Dest - (Vector2)transform.position;
+            var dir = Dest - (Vector2) transform.position;
             GetComponent<Animator>().SetFloat("DirX", dir.x);
             GetComponent<Animator>().SetFloat("DirY", dir.y);
         }
@@ -60,8 +64,15 @@ namespace Assets.Scripts.PacMan
         {
             if (collision.name == "Ghost")
             {
-                GetComponent<Animator>().SetBool("Dead", true);
-                _isDead = true;
+                if (_gameState.IsBonusTime)
+                {
+                    Destroy(collision.gameObject);
+                }
+                else
+                {
+                    GetComponent<Animator>().SetBool("Dead", true);
+                    _isDead = true;
+                }
             }
             else if (collision.name == "Tunnel Left")
             {

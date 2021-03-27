@@ -1,18 +1,20 @@
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
     public class Dot : MonoBehaviour
     {
-        public Text ScoreText;
-
         public Sprite BigSprite;
+
+        private GameState _gameState;
+
         private bool _isBig;
 
         void Start()
         {
-            _isBig = Random.value < 0.1f;
+            _gameState = gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
+            _isBig = Random.value < 0.05f;
             if (_isBig)
             {
                 GetComponent<SpriteRenderer>().sprite = BigSprite;
@@ -24,7 +26,11 @@ namespace Assets.Scripts
             if (collision.name == "PacMan")
             {
                 Destroy(gameObject);
-                GameState.UpdateScore(ScoreText, _isBig ? 5 : 1);
+                _gameState.UpdateScore(1);
+                if (_isBig)
+                {
+                    _gameState.BonusTimeStart();
+                }
             }
         }
     }
