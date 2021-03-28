@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -8,12 +7,11 @@ namespace Assets.Scripts
         public Sprite BigSprite;
 
         private GameState _gameState;
-
         private bool _isBig;
 
         void Start()
         {
-            _gameState = gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
+            _gameState = GameState.GetGameState(gameObject);
             _isBig = Random.value < 0.05f;
             if (_isBig)
             {

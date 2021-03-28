@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -10,17 +9,15 @@ namespace Assets.Scripts.PacMan
 
         private GameState _gameState;
 
-        private bool _isDead;
-
         private void Start()
         {
-            _gameState = gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
+            _gameState = GameState.GetGameState(gameObject);
             Dest = transform.position;
         }
 
         private void FixedUpdate()
         {
-            if (_isDead)
+            if (_gameState.IsDead)
             {
                 return;
             }
@@ -55,8 +52,7 @@ namespace Assets.Scripts.PacMan
 
         private bool IsValid(Vector2 dir)
         {
-            Vector2 pos = transform.position;
-            var hit = Physics2D.CircleCast(pos, GetComponent<CircleCollider2D>().radius, dir, 1f, 1 << 31);
+            var hit = Physics2D.CircleCast(transform.position, GetComponent<CircleCollider2D>().radius, dir, 1f, 1 << 31);
             return hit.collider == null;
         }
 
@@ -70,8 +66,11 @@ namespace Assets.Scripts.PacMan
                 }
                 else
                 {
-                    GetComponent<Animator>().SetBool("Dead", true);
-                    _isDead = true;
+                    _gameState.UpdateLives(-1);
+                    if (_gameState.IsDead)
+                    {
+                        GetComponent<Animator>().SetBool("Dead", true);
+                    }
                 }
             }
             else if (collision.name == "Tunnel Left")
@@ -82,7 +81,7 @@ namespace Assets.Scripts.PacMan
             else if (collision.name == "Tunnel Right")
             {
                 transform.position = new Vector2(-16f, 0f);
-                Dest = (Vector2)transform.position + Vector2.right;
+                Dest = (Vector2) transform.position + Vector2.right;
             }
         }
     }
