@@ -6,13 +6,14 @@ namespace Assets.Scripts.Ghost
     {
         public float Speed = 0.2f;
         public Transform[] Waypoints;
-        public Color BonusColor;
+        public Color AltColor;
 
         private GameState _gameState;
         private SpriteRenderer _renderer;
         private Color _originalColor;
 
         private int _currWaypoint;
+        private int _prevWaypoint;
 
         private void Start()
         {
@@ -23,17 +24,18 @@ namespace Assets.Scripts.Ghost
 
         private void Update()
         {
-            _renderer.color = _gameState.IsBonusTime ? BonusColor : _originalColor;
+            _renderer.color = _gameState.IsBonusTime ? AltColor : _originalColor;
         }
 
         private void FixedUpdate()
         {
-            var p = Vector2.MoveTowards(transform.position, Waypoints[_currWaypoint].position, Speed);
+            var p = Vector2.MoveTowards(transform.position, Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position, Speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
-            if (transform.position == Waypoints[_currWaypoint].position)
+            if (transform.position == Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position)
             {
-                _currWaypoint = (_currWaypoint + 1) % Waypoints.Length;
+                _currWaypoint = (_currWaypoint + Waypoints.Length + (_gameState.IsBonusTime ? -1 : 1)) % Waypoints.Length;
+                _prevWaypoint = (_currWaypoint + Waypoints.Length - 1) % Waypoints.Length;
             }
         }
     }

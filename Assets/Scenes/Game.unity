@@ -27394,7 +27394,7 @@ MonoBehaviour:
   - {fileID: 100845367}
   - {fileID: 1627874518}
   - {fileID: 1985333861}
-  BonusColor: {r: 0, g: 0.63529414, b: 0.9098039, a: 1}
+  AltColor: {r: 0, g: 0.63529414, b: 0.9098039, a: 1}
 --- !u!1 &1404507495
 GameObject:
   m_ObjectHideFlags: 0

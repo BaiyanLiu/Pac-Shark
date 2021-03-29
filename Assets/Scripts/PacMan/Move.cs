@@ -27,19 +27,22 @@ namespace Assets.Scripts.PacMan
 
             if ((Vector2) transform.position == Dest)
             {
-                if (Input.GetKey(KeyCode.UpArrow) && IsValid(Vector2.up))
+                var horizontal = Input.GetAxisRaw("Horizontal");
+                var vertical = Input.GetAxisRaw("Vertical");
+
+                if (vertical > 0.1f && IsValid(Vector2.up))
                 {
                     Dest = (Vector2) transform.position + Vector2.up;
                 }
-                if (Input.GetKey(KeyCode.RightArrow) && IsValid(Vector2.right))
+                if (horizontal > 0.1f && IsValid(Vector2.right))
                 {
                     Dest = (Vector2) transform.position + Vector2.right;
                 }
-                if (Input.GetKey(KeyCode.DownArrow) && IsValid(Vector2.down))
+                if (vertical < -0.1f && IsValid(Vector2.down))
                 {
                     Dest = (Vector2) transform.position + Vector2.down;
                 }
-                if (Input.GetKey(KeyCode.LeftArrow) && IsValid(Vector2.left))
+                if (horizontal < -0.1f && IsValid(Vector2.left))
                 {
                     Dest = (Vector2) transform.position + Vector2.left;
                 }
