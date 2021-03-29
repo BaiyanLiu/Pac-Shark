@@ -48,7 +48,7 @@ namespace Assets.Scripts
 
         public void BonusTimeStart()
         {
-            _bonusTime = 5;
+            _bonusTime = 3;
         }
     }
 }

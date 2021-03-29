@@ -65,7 +65,7 @@ namespace Assets.Scripts.PacMan
             {
                 if (_gameState.IsBonusTime)
                 {
-                    Destroy(collision.gameObject);
+                    collision.gameObject.GetComponent<Ghost.Ghost>().Die();
                 }
                 else
                 {
