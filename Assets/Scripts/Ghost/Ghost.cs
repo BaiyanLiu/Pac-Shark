@@ -27,7 +27,7 @@ namespace Assets.Scripts.Ghost
 
         private void Update()
         {
-            _renderer.color = _gameState.IsBonusTime ? AltColor : _originalColor;
+            _renderer.color = _gameState.IsBonusTime || _isDead ? AltColor : _originalColor;
         }
 
         private void FixedUpdate()
