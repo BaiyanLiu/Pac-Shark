@@ -8,6 +8,8 @@ namespace Assets.Scripts.Ghost
         public Transform[] Waypoints;
         public Color AltColor;
 
+        public bool IsDead { get; private set; }
+
         private GameState _gameState;
         private SpriteRenderer _renderer;
         private Color _originalColor;
@@ -15,7 +17,6 @@ namespace Assets.Scripts.Ghost
 
         private int _currWaypoint;
         private int _prevWaypoint;
-        private bool _isDead;
 
         private void Start()
         {
@@ -27,19 +28,19 @@ namespace Assets.Scripts.Ghost
 
         private void Update()
         {
-            _renderer.color = _gameState.IsBonusTime || _isDead ? AltColor : _originalColor;
+            _renderer.color = _gameState.IsBonusTime || IsDead ? AltColor : _originalColor;
         }
 
         private void FixedUpdate()
         {
-            var p = Vector2.MoveTowards(transform.position, _isDead ? _originalPosition : Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position, Speed);
+            var p = Vector2.MoveTowards(transform.position, IsDead ? _originalPosition : Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position, Speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
-            if (!_gameState.IsBonusTime && _isDead && p == (Vector2) _originalPosition)
+            if (!_gameState.IsBonusTime && IsDead && p == (Vector2) _originalPosition)
             {
-                _isDead = false;
+                IsDead = false;
                 Speed *= 2;
-            } else if (!_isDead && transform.position == Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position)
+            } else if (!IsDead && transform.position == Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position)
             {
                 _currWaypoint = (_currWaypoint + Waypoints.Length + (_gameState.IsBonusTime ? -1 : 1)) % Waypoints.Length;
                 _prevWaypoint = (_currWaypoint + Waypoints.Length - 1) % Waypoints.Length;
@@ -48,7 +49,7 @@ namespace Assets.Scripts.Ghost
 
         public void Die()
         {
-            _isDead = true;
+            IsDead = true;
             _currWaypoint = 0;
             Speed /= 2;
         }

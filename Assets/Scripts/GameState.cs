@@ -10,7 +10,7 @@ namespace Assets.Scripts
         public Text LivesText;
         public int Lives;
 
-        public bool IsBonusTime => _bonusTime > 0;
+        public bool IsBonusTime => _bonusTime > 0f;
         public bool IsDead => Lives == 0;
 
         private int _score;
@@ -28,7 +28,7 @@ namespace Assets.Scripts
 
         private void Update()
         {
-            if (_bonusTime > 0)
+            if (_bonusTime > 0f)
             {
                 _bonusTime -= Time.deltaTime;
             }

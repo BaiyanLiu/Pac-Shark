@@ -8,11 +8,42 @@ namespace Assets.Scripts.PacMan
         public Vector2 Dest = Vector2.zero;
 
         private GameState _gameState;
+        private SpriteRenderer _renderer;
+        private Color _originalColor;
+        private float _invincibleTime;
+        private float _invincibleFlashTime;
 
         private void Start()
         {
             _gameState = GameState.GetGameState(gameObject);
+            _renderer = gameObject.GetComponent<SpriteRenderer>();
+            _originalColor = _renderer.color;
             Dest = transform.position;
+        }
+
+        private void Update()
+        {
+            if (_invincibleTime > 0f)
+            {
+                _invincibleTime -= Time.deltaTime;
+            }
+            if (_invincibleFlashTime > 0f)
+            {
+                _invincibleFlashTime -= Time.deltaTime;
+            }
+
+            if (_invincibleFlashTime <= 0f)
+            {
+                if (_invincibleTime > 0f)
+                {
+                    _renderer.color = _renderer.color == _originalColor ? Color.black : _originalColor;
+                }
+                else
+                {
+                    _renderer.color = _originalColor;
+                }
+                _invincibleFlashTime = 0.1f;
+            }
         }
 
         private void FixedUpdate()
@@ -61,18 +92,22 @@ namespace Assets.Scripts.PacMan
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.name == "Ghost")
+            if (collision.name == "Ghost" && !collision.gameObject.GetComponent<Ghost.Ghost>().IsDead)
             {
                 if (_gameState.IsBonusTime)
                 {
                     collision.gameObject.GetComponent<Ghost.Ghost>().Die();
                 }
-                else
+                else if (_invincibleTime <= 0f)
                 {
                     _gameState.UpdateLives(-1);
                     if (_gameState.IsDead)
                     {
                         GetComponent<Animator>().SetBool("Dead", true);
+                    }
+                    else
+                    {
+                        _invincibleTime = 3f;
                     }
                 }
             }
