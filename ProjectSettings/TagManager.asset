@@ -35,7 +35,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Barriers
   - Walls
   m_SortingLayers:
   - name: Default

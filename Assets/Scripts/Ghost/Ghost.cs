@@ -2,56 +2,62 @@ using UnityEngine;
 
 namespace Assets.Scripts.Ghost
 {
-    public class Ghost : MonoBehaviour
+    public abstract class Ghost : Moveable
     {
         public float Speed = 0.2f;
-        public Transform[] Waypoints;
         public Color AltColor;
 
         public bool IsDead { get; private set; }
 
-        private GameState _gameState;
+        protected GameState GameState;
+        protected Vector3 OriginalPosition;
+        
         private SpriteRenderer _renderer;
         private Color _originalColor;
-        private Vector3 _originalPosition;
-
-        private int _currWaypoint;
-        private int _prevWaypoint;
 
         private void Start()
         {
-            _gameState = GameState.GetGameState(gameObject);
+            GameState = GameState.GetGameState(gameObject);
+            OriginalPosition = transform.position;
             _renderer = gameObject.GetComponent<SpriteRenderer>();
             _originalColor = _renderer.color;
-            _originalPosition = transform.position;
+            OnStart();
         }
+
+        protected virtual void OnStart() {}
 
         private void Update()
         {
-            _renderer.color = _gameState.IsBonusTime || IsDead ? AltColor : _originalColor;
+            _renderer.color = GameState.IsBonusTime || IsDead ? AltColor : _originalColor;
         }
 
         private void FixedUpdate()
         {
-            var p = Vector2.MoveTowards(transform.position, IsDead ? _originalPosition : Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position, Speed);
+            var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, Speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
-            if (!_gameState.IsBonusTime && IsDead && p == (Vector2) _originalPosition)
+            if (!GameState.IsBonusTime && IsDead && p == (Vector2) OriginalPosition)
             {
                 IsDead = false;
                 Speed *= 2;
-            } else if (!IsDead && transform.position == Waypoints[_gameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position)
+            }
+            else if (!IsDead)
             {
-                _currWaypoint = (_currWaypoint + Waypoints.Length + (_gameState.IsBonusTime ? -1 : 1)) % Waypoints.Length;
-                _prevWaypoint = (_currWaypoint + Waypoints.Length - 1) % Waypoints.Length;
+                UpdateNextPos();
             }
         }
+
+        protected abstract Vector3 NextPos { get; }
+
+        protected abstract void UpdateNextPos();
 
         public void Die()
         {
             IsDead = true;
-            _currWaypoint = 0;
             Speed /= 2;
+            OnDie();
         }
+
+        public virtual void OnDie() {}
     }
 }

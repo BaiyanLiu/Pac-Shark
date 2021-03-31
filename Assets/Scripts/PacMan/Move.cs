@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.PacMan
 {
-    public class Move : MonoBehaviour
+    public class Move : Moveable
     {
         public float Speed = 0.4f;
         public Vector2 Dest = Vector2.zero;
@@ -61,19 +61,19 @@ namespace Assets.Scripts.PacMan
                 var horizontal = Input.GetAxisRaw("Horizontal");
                 var vertical = Input.GetAxisRaw("Vertical");
 
-                if (vertical > 0.1f && IsValid(Vector2.up))
+                if (vertical > 0.1f && IsValid(Vector2.up, 30))
                 {
                     Dest = (Vector2) transform.position + Vector2.up;
                 }
-                if (horizontal > 0.1f && IsValid(Vector2.right))
+                if (horizontal > 0.1f && IsValid(Vector2.right, 30))
                 {
                     Dest = (Vector2) transform.position + Vector2.right;
                 }
-                if (vertical < -0.1f && IsValid(Vector2.down))
+                if (vertical < -0.1f && IsValid(Vector2.down, 30))
                 {
                     Dest = (Vector2) transform.position + Vector2.down;
                 }
-                if (horizontal < -0.1f && IsValid(Vector2.left))
+                if (horizontal < -0.1f && IsValid(Vector2.left, 30))
                 {
                     Dest = (Vector2) transform.position + Vector2.left;
                 }
@@ -84,15 +84,9 @@ namespace Assets.Scripts.PacMan
             GetComponent<Animator>().SetFloat("DirY", dir.y);
         }
 
-        private bool IsValid(Vector2 dir)
-        {
-            var hit = Physics2D.CircleCast(transform.position, GetComponent<CircleCollider2D>().radius, dir, 1f, 1 << 31);
-            return hit.collider == null;
-        }
-
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.name == "Ghost" && !collision.gameObject.GetComponent<Ghost.Ghost>().IsDead)
+            if (collision.name.StartsWith("Ghost") && !collision.gameObject.GetComponent<Ghost.Ghost>().IsDead)
             {
                 if (_gameState.IsBonusTime)
                 {
