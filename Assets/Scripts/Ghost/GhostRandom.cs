@@ -25,25 +25,27 @@ namespace Assets.Scripts.Ghost
         {
             if ((Vector2) transform.position == _dest)
             {
-                while (!IsValid(_dir))
+                var dir = Vector2.zero;
+                do
                 {
                     switch (Random.Range(0, 4))
                     {
                         case 0:
-                            _dir = Vector2.up;
+                            dir = Vector2.up;
                             break;
                         case 1:
-                            _dir = Vector2.right;
+                            dir = Vector2.right;
                             break;
                         case 2:
-                            _dir = Vector2.down;
+                            dir = Vector2.down;
                             break;
                         case 3:
-                            _dir = Vector2.left;
+                            dir = Vector2.left;
                             break;
                     }
-                }
-                _dest = (Vector2) transform.position + _dir;
+                    _dest = (Vector2) transform.position + dir;
+                } while (dir == -_dir || _dest.x < GameState.Min.x || _dest.x > GameState.Max.x || !IsValid(dir));
+                _dir = dir;
             }
         }
 

@@ -26,6 +26,11 @@ namespace Assets.Scripts.Ghost
 
         protected override void UpdateNextPos()
         {
+            if (GameState.IsDead)
+            {
+                return;
+            }
+
             if ((Vector2) transform.position == _dest)
             {
                 var dest = GameState.IsBonusTime ? OriginalPosition : PacMan.GetComponent<Move>().Dest;
