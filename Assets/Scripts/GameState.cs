@@ -10,7 +10,7 @@ namespace Assets.Scripts
         public static readonly Vector2Int Max = new Vector2Int(14, 13);
 
         public Text ScoreText;
-        public Text LivesText;
+        public Image[] LivesImages;
         public int Lives;
 
         public bool IsBonusTime => _bonusTime > 0f;
@@ -24,11 +24,6 @@ namespace Assets.Scripts
             return gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
         }
 
-        private void Start()
-        {
-            UpdateLives(0);
-        }
-
         private void Update()
         {
             if (_bonusTime > 0f)
@@ -40,13 +35,16 @@ namespace Assets.Scripts
         public void UpdateScore(int delta)
         {
             _score += delta;
-            ScoreText.text = "Score: " + _score.ToString().PadLeft(3);
+            ScoreText.text = _score.ToString().PadLeft(3, '0');
         }
 
         public void UpdateLives(int delta)
         {
             Lives += delta;
-            LivesText.text = "Lives: " + Lives;
+            for (var i = Lives; i < LivesImages.Length; i++)
+            {
+                LivesImages[i].color = Color.black;
+            }
         }
 
         public void BonusTimeStart()
