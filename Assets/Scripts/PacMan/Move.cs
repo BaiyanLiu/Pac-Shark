@@ -5,13 +5,14 @@ namespace Assets.Scripts.PacMan
     public class Move : Moveable
     {
         public float Speed = 0.4f;
-        public Vector2 Dest = Vector2.zero;
+
+        public Vector2 Dest { get; private set; }
 
         private GameState _gameState;
         private SpriteRenderer _renderer;
         private Color _originalColor;
         private float _invincibleTime;
-        private float _invincibleFlashTime;
+        private float _flashTime;
 
         private void Start()
         {
@@ -27,12 +28,12 @@ namespace Assets.Scripts.PacMan
             {
                 _invincibleTime -= Time.deltaTime;
             }
-            if (_invincibleFlashTime > 0f)
+            if (_flashTime > 0f)
             {
-                _invincibleFlashTime -= Time.deltaTime;
+                _flashTime -= Time.deltaTime;
             }
 
-            if (_invincibleFlashTime <= 0f)
+            if (_flashTime <= 0f)
             {
                 if (_invincibleTime > 0f)
                 {
@@ -42,7 +43,7 @@ namespace Assets.Scripts.PacMan
                 {
                     _renderer.color = _originalColor;
                 }
-                _invincibleFlashTime = 0.1f;
+                _flashTime = 0.1f;
             }
         }
 

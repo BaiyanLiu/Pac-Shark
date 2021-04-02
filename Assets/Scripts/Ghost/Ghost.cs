@@ -1,4 +1,5 @@
 using UnityEngine;
+using Color = UnityEngine.Color;
 
 namespace Assets.Scripts.Ghost
 {
@@ -10,7 +11,7 @@ namespace Assets.Scripts.Ghost
         public bool IsDead { get; private set; }
 
         protected GameState GameState;
-        protected Vector3 OriginalPosition;
+        protected Vector2 OriginalPosition;
         
         private SpriteRenderer _renderer;
         private Color _originalColor;
@@ -36,7 +37,7 @@ namespace Assets.Scripts.Ghost
             var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, Speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
-            if (!GameState.IsBonusTime && IsDead && p == (Vector2) OriginalPosition)
+            if (!GameState.IsBonusTime && IsDead && p == OriginalPosition)
             {
                 IsDead = false;
                 Speed *= 2;
@@ -47,7 +48,7 @@ namespace Assets.Scripts.Ghost
             }
         }
 
-        protected abstract Vector3 NextPos { get; }
+        protected abstract Vector2 NextPos { get; }
 
         protected abstract void UpdateNextPos();
 

@@ -5,19 +5,25 @@ namespace Assets.Scripts.Ghost
 {
     public class GhostRandom : Ghost
     {
-        private Vector3 _dest;
+        private Vector2 _dest;
         private Vector2 _dir;
 
         protected override void OnStart()
         {
+            Reset();
+        }
+
+        private void Reset()
+        {
+            _dest = OriginalPosition;
             _dir = Vector2.up;
         }
 
-        protected override Vector3 NextPos => _dest;
+        protected override Vector2 NextPos => _dest;
 
         protected override void UpdateNextPos()
         {
-            if (transform.position == _dest)
+            if ((Vector2) transform.position == _dest)
             {
                 while (!IsValid(_dir))
                 {
@@ -43,8 +49,7 @@ namespace Assets.Scripts.Ghost
 
         public override void OnDie()
         {
-            _dest = OriginalPosition;
-            _dir = Vector2.up;
+            Reset();
         }
     }
 }

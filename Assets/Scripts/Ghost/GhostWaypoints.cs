@@ -9,7 +9,7 @@ namespace Assets.Scripts.Ghost
         private int _currWaypoint;
         private int _prevWaypoint;
 
-        protected override Vector3 NextPos => Waypoints[GameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position;
+        protected override Vector2 NextPos => Waypoints[GameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position;
 
         protected override void UpdateNextPos()
         {
