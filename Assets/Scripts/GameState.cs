@@ -6,8 +6,8 @@ namespace Assets.Scripts
 {
     public class GameState : MonoBehaviour
     {
-        public static readonly Vector2Int Min = new Vector2Int(-13, -13);
-        public static readonly Vector2Int Max = new Vector2Int(14, 13);
+        public static readonly Vector2Int Min = new Vector2Int(-15, -13);
+        public static readonly Vector2Int Max = new Vector2Int(15, 13);
 
         public Text ScoreText;
         public Image[] LivesImages;

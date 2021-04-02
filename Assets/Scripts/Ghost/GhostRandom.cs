@@ -16,7 +16,6 @@ namespace Assets.Scripts.Ghost
         private void Reset()
         {
             _dest = OriginalPosition;
-            _dir = Vector2.up;
         }
 
         protected override Vector2 NextPos => _dest;

@@ -106,15 +106,18 @@ namespace Assets.Scripts.PacMan
                     }
                 }
             }
-            else if (collision.name == "Tunnel Left")
+            else if (collision.name.StartsWith("Tunnel"))
             {
-                transform.position = new Vector2(17f, 0f);
-                Dest = (Vector2) transform.position + Vector2.left;
-            }
-            else if (collision.name == "Tunnel Right")
-            {
-                transform.position = new Vector2(-16f, 0f);
-                Dest = (Vector2) transform.position + Vector2.right;
+                if (collision.name.Contains("Left"))
+                {
+                    transform.position = new Vector2(18f, transform.position.y);
+                    Dest = (Vector2)transform.position + Vector2.left;
+                }
+                else
+                {
+                    transform.position = new Vector2(-18f, transform.position.y);
+                    Dest = (Vector2)transform.position + Vector2.right;
+                }
             }
         }
     }
