@@ -111,12 +111,12 @@ namespace Assets.Scripts.PacMan
                 if (collision.name.Contains("Left"))
                 {
                     transform.position = new Vector2(18f, transform.position.y);
-                    Dest = (Vector2)transform.position + Vector2.left;
+                    Dest = (Vector2) transform.position + Vector2.left;
                 }
                 else
                 {
                     transform.position = new Vector2(-18f, transform.position.y);
-                    Dest = (Vector2)transform.position + Vector2.right;
+                    Dest = (Vector2) transform.position + Vector2.right;
                 }
             }
         }

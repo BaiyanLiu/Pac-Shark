@@ -5,7 +5,6 @@ namespace Assets.Scripts.Ghost
 {
     public abstract class Ghost : Moveable
     {
-        public float Speed = 0.2f;
         public Color AltColor;
 
         public bool IsDead { get; private set; }
@@ -15,6 +14,7 @@ namespace Assets.Scripts.Ghost
         
         private SpriteRenderer _renderer;
         private Color _originalColor;
+        private float _speed;
 
         private void Start()
         {
@@ -22,6 +22,13 @@ namespace Assets.Scripts.Ghost
             OriginalPosition = transform.position;
             _renderer = gameObject.GetComponent<SpriteRenderer>();
             _originalColor = _renderer.color;
+
+            _speed = GameState.GhostSpeed;
+            GameState.OnLevelChanged += (sender, args) =>
+            {
+                _speed = GameState.GhostSpeed;
+            };
+
             OnStart();
         }
 
@@ -34,13 +41,13 @@ namespace Assets.Scripts.Ghost
 
         private void FixedUpdate()
         {
-            var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, Speed);
+            var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, _speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
             if (!GameState.IsBonusTime && IsDead && p == OriginalPosition)
             {
                 IsDead = false;
-                Speed *= 2;
+                _speed *= 2;
             }
             else if (!IsDead)
             {
@@ -55,7 +62,7 @@ namespace Assets.Scripts.Ghost
         public void Die()
         {
             IsDead = true;
-            Speed /= 2;
+            _speed /= 2;
             OnDie();
         }
 
