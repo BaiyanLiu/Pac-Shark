@@ -24,7 +24,7 @@ namespace Assets.Scripts
 
         private int _score;
         private float _bonusTime;
-        private int _level = 1;
+        private int _level;
 
         public static GameState GetGameState(GameObject gameObject)
         {
@@ -70,11 +70,8 @@ namespace Assets.Scripts
                 level.SetActive(false);
             }
             Levels[_level].SetActive(true);
-            Waypoints = Levels[_level].transform.Find("Waypoints")
-                .GetComponentsInChildren<Transform>()
-                .Where(t => t.name != "Waypoints")
-                .OrderBy(t => t.name)
-                .ToArray();
+            Waypoints = Levels[_level].transform.Find("Waypoints").GetComponentsInChildren<Transform>()
+                .Where(t => t.name != "Waypoints").ToArray();
             GhostSpeed = 0.2f + 0.02f * _level;
         }
 
