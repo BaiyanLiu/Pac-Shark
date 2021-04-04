@@ -4,13 +4,12 @@ namespace Assets.Scripts.PacMan
 {
     public class Move : Moveable
     {
-        public float Speed = 0.4f;
-
         public Vector2 Dest { get; private set; }
 
         private GameState _gameState;
         private SpriteRenderer _renderer;
         private Color _originalColor;
+        private Vector2 _originalPosition;
         private float _invincibleTime;
         private float _flashTime;
 
@@ -19,7 +18,18 @@ namespace Assets.Scripts.PacMan
             _gameState = GameState.GetGameState(gameObject);
             _renderer = gameObject.GetComponent<SpriteRenderer>();
             _originalColor = _renderer.color;
-            Dest = transform.position;
+            _originalPosition = transform.position;
+            Reset();
+
+            _gameState.OnLevelChanged += (sender, args) =>
+            {
+                Reset();
+            };
+        }
+
+        private void Reset()
+        {
+            Dest =  transform.position = _originalPosition;
         }
 
         private void Update()
@@ -54,7 +64,7 @@ namespace Assets.Scripts.PacMan
                 return;
             }
 
-            var p = Vector2.MoveTowards(transform.position, Dest, Speed);
+            var p = Vector2.MoveTowards(transform.position, Dest, GameState.PacManSpeed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
             if ((Vector2) transform.position == Dest)
@@ -87,6 +97,11 @@ namespace Assets.Scripts.PacMan
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (_gameState.IsDead)
+            {
+                return;
+            }
+
             if (collision.name.StartsWith("Ghost") && !collision.gameObject.GetComponent<Ghost.Ghost>().IsDead)
             {
                 if (_gameState.IsBonusTime)

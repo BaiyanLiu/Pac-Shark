@@ -24,7 +24,7 @@ namespace Assets.Scripts
             if (collision.name == "PacMan")
             {
                 Destroy(gameObject);
-                _gameState.UpdateScore(1);
+                _gameState.DotEaten();
                 if (_isBig)
                 {
                     _gameState.BonusTimeStart();

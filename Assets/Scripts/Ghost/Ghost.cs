@@ -27,12 +27,16 @@ namespace Assets.Scripts.Ghost
             GameState.OnLevelChanged += (sender, args) =>
             {
                 _speed = GameState.GhostSpeed;
+                transform.position = OriginalPosition;
+                OnLevelChanged();
             };
 
             OnStart();
         }
 
         protected virtual void OnStart() {}
+
+        protected virtual void OnLevelChanged() {}
 
         private void Update()
         {

@@ -7,6 +7,11 @@ namespace Assets.Scripts.Ghost
         private int _currWaypoint;
         private int _prevWaypoint;
 
+        protected override void OnLevelChanged()
+        {
+            _prevWaypoint = _currWaypoint = 0;
+        }
+
         protected override Vector2 NextPos => GameState.Waypoints[GameState.IsBonusTime ? _prevWaypoint : _currWaypoint].position;
 
         protected override void UpdateNextPos()

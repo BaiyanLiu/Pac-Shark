@@ -13,6 +13,11 @@ namespace Assets.Scripts.Ghost
             Reset();
         }
 
+        protected override void OnLevelChanged()
+        {
+            Reset();
+        }
+
         private void Reset()
         {
             _dest = OriginalPosition;

@@ -19,12 +19,15 @@ namespace Assets.Scripts
 
         public bool IsBonusTime => _bonusTime > 0f;
         public bool IsDead => Lives == 0;
+
+        public const float PacManSpeed = 0.4f;
+        public float GhostSpeed { get; private set; } = 0.2f;
         public Transform[] Waypoints { get; private set; }
-        public float GhostSpeed { get; private set; }
 
         private int _score;
         private float _bonusTime;
         private int _level;
+        private int _numDots;
 
         public static GameState GetGameState(GameObject gameObject)
         {
@@ -44,12 +47,6 @@ namespace Assets.Scripts
             }
         }
 
-        public void UpdateScore(int delta)
-        {
-            _score += delta;
-            ScoreText.text = _score.ToString().PadLeft(3, '0');
-        }
-
         public void UpdateLives(int delta)
         {
             Lives += delta;
@@ -61,7 +58,7 @@ namespace Assets.Scripts
 
         public void BonusTimeStart()
         {
-            _bonusTime = 3;
+            _bonusTime = 3f;
         }
         private void ActivateLevel()
         {
@@ -72,13 +69,33 @@ namespace Assets.Scripts
             Levels[_level].SetActive(true);
             Waypoints = Levels[_level].transform.Find("Waypoints").GetComponentsInChildren<Transform>()
                 .Where(t => t.name != "Waypoints").ToArray();
-            GhostSpeed = 0.2f + 0.02f * _level;
+            _numDots = Levels[_level].transform.Find("Dots").childCount;
         }
 
-        public void NextLevel()
+        public void DotEaten()
         {
-            _level += 1;
+            _score++;
+            ScoreText.text = _score.ToString().PadLeft(3, '0');
+
+            _numDots--;
+            if (_numDots == 0)
+            {
+                if (++_level < Levels.Length)
+                {
+                    NextLevel();
+                }
+                else
+                {
+                    // TODO
+                }
+            }
+        }
+
+        private void NextLevel()
+        {
+            _bonusTime = 0f;
             ActivateLevel();
+            GhostSpeed += 0.1f * (PacManSpeed - GhostSpeed);
             OnLevelChanged?.Invoke(this, EventArgs.Empty);
         }
     }
