@@ -13,6 +13,7 @@ namespace Assets.Scripts
         public event EventHandler OnLevelChanged;
 
         public Text ScoreText;
+        public Text HighScoreText;
         public Image[] LivesImages;
         public int Lives;
         public GameObject[] Levels;
@@ -25,6 +26,7 @@ namespace Assets.Scripts
         public Transform[] Waypoints { get; private set; }
 
         private int _score;
+        private int _highScore;
         private float _bonusTime;
         private int _level;
         private int _numDots;
@@ -36,6 +38,7 @@ namespace Assets.Scripts
 
         private void Start()
         {
+            UpdateHighScore();
             ActivateLevel();
         }
 
@@ -76,6 +79,11 @@ namespace Assets.Scripts
         {
             _score++;
             ScoreText.text = _score.ToString().PadLeft(3, '0');
+            if (_score > _highScore)
+            {
+                PlayerPrefs.SetInt("Score", _score);
+                UpdateHighScore();
+            }
 
             _numDots--;
             if (_numDots == 0)
@@ -89,6 +97,12 @@ namespace Assets.Scripts
                     // TODO
                 }
             }
+        }
+
+        private void UpdateHighScore()
+        {
+            _highScore = PlayerPrefs.GetInt("Score");
+            HighScoreText.text = "H:" + _highScore.ToString().PadLeft(3, '0');
         }
 
         private void NextLevel()
