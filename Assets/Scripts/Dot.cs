@@ -1,3 +1,4 @@
+using Assets.Scripts.Scenes;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -7,13 +8,13 @@ namespace Assets.Scripts
         public Sprite BigSprite;
 
         private GameState _gameState;
-        private bool _isBig;
+        private bool _isBonus;
 
         void Start()
         {
             _gameState = GameState.GetGameState(gameObject);
-            _isBig = Random.value < 0.05f;
-            if (_isBig)
+            _isBonus = Random.value < (0.05f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
+            if (_isBonus)
             {
                 GetComponent<SpriteRenderer>().sprite = BigSprite;
             }
@@ -25,7 +26,7 @@ namespace Assets.Scripts
             {
                 Destroy(gameObject);
                 _gameState.DotEaten();
-                if (_isBig)
+                if (_isBonus)
                 {
                     _gameState.BonusTimeStart();
                 }

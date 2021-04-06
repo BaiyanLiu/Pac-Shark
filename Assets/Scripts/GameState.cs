@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Assets.Scripts.Scenes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,7 +23,7 @@ namespace Assets.Scripts
         public bool IsDead => Lives == 0;
 
         public const float PacManSpeed = 0.4f;
-        public float GhostSpeed { get; private set; } = 0.2f;
+        public float GhostSpeed { get; private set; }
         public Transform[] Waypoints { get; private set; }
 
         private int _score;
@@ -40,6 +41,7 @@ namespace Assets.Scripts
         {
             UpdateHighScore();
             ActivateLevel();
+            GhostSpeed = 0.2f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
         }
 
         private void Update()
