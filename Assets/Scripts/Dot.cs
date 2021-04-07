@@ -5,6 +5,7 @@ namespace Assets.Scripts
 {
     public class Dot : MonoBehaviour
     {
+        public Sprite SmallSprite;
         public Sprite BigSprite;
 
         private GameState _gameState;
@@ -13,18 +14,26 @@ namespace Assets.Scripts
         void Start()
         {
             _gameState = GameState.GetGameState(gameObject);
-            _isBonus = Random.value < (0.05f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
-            if (_isBonus)
+            Reset();
+
+            _gameState.OnLevelChanged += (sender, args) =>
             {
-                GetComponent<SpriteRenderer>().sprite = BigSprite;
-            }
+                gameObject.SetActive(true);
+                Reset();
+            };
+        }
+
+        private void Reset()
+        {
+            _isBonus = Random.value < (0.05f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
+            GetComponent<SpriteRenderer>().sprite = _isBonus ? BigSprite : SmallSprite;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.name == "PacMan")
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
                 _gameState.DotEaten();
                 if (_isBonus)
                 {

@@ -90,14 +90,7 @@ namespace Assets.Scripts
             _numDots--;
             if (_numDots == 0)
             {
-                if (++_level < Levels.Length)
-                {
-                    NextLevel();
-                }
-                else
-                {
-                    // TODO
-                }
+                NextLevel();
             }
         }
 
@@ -110,6 +103,7 @@ namespace Assets.Scripts
         private void NextLevel()
         {
             _bonusTime = 0f;
+            _level = (_level + 1) % Levels.Length;
             ActivateLevel();
             GhostSpeed += 0.1f * (PacManSpeed - GhostSpeed);
             OnLevelChanged?.Invoke(this, EventArgs.Empty);

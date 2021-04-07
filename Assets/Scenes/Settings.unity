@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 57190024}
   m_Layer: 0
-  m_Name: Big Dots
+  m_Name: Bonus Dots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 272703912}
   m_Direction: 0
   m_MinValue: 50
-  m_MaxValue: 200
+  m_MaxValue: 150
   m_WholeNumbers: 1
   m_Value: 100
   m_OnValueChanged:
@@ -1761,7 +1761,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1793987896}
         m_TargetAssemblyTypeName: Assets.Scripts.Scenes.Settings, Assembly-CSharp
-        m_MethodName: OnBonusDotsValueChanged
+        m_MethodName: OnBonusDotsChanged
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

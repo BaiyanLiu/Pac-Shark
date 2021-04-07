@@ -32,7 +32,7 @@ namespace Assets.Scripts.Scenes
             GhostSpeedSlider.value  = _ghostSpeed = PlayerPrefs.GetInt(GhostSpeed);
         }
 
-        public void OnBonusDotsValueChanged(float value)
+        public void OnBonusDotsChanged(float value)
         {
             _bonusDots = Convert.ToInt16(value);
             BonusDotsValue.text = _bonusDots + "%";
