@@ -34,6 +34,11 @@ namespace Assets.Scripts.PacMan
 
         private void Update()
         {
+            if (GameState.IsPaused)
+            {
+                return;
+            }
+
             if (_invincibleTime > 0f)
             {
                 _invincibleTime -= Time.deltaTime;
@@ -59,7 +64,7 @@ namespace Assets.Scripts.PacMan
 
         private void FixedUpdate()
         {
-            if (_gameState.IsDead)
+            if (GameState.IsPaused || _gameState.IsDead)
             {
                 return;
             }

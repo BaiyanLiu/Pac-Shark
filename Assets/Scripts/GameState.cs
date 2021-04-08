@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using Assets.Scripts.Scenes;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Assets.Scripts
@@ -13,6 +14,8 @@ namespace Assets.Scripts
 
         public event EventHandler OnLevelChanged;
 
+        public static bool IsPaused { get; set; }
+
         public Text ScoreText;
         public Text HighScoreText;
         public Image[] LivesImages;
@@ -21,7 +24,7 @@ namespace Assets.Scripts
 
         public bool IsBonusTime => _bonusTime > 0f;
         public bool IsDead => Lives == 0;
-
+        
         public const float PacManSpeed = 0.4f;
         public float GhostSpeed { get; private set; }
         public Transform[] Waypoints { get; private set; }
@@ -39,6 +42,7 @@ namespace Assets.Scripts
 
         private void Start()
         {
+            IsPaused = false;
             UpdateHighScore();
             ActivateLevel();
             GhostSpeed = 0.2f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
@@ -46,6 +50,18 @@ namespace Assets.Scripts
 
         private void Update()
         {
+            if (IsPaused)
+            {
+                return;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+                IsPaused = true;
+                return;
+            }
+
             if (_bonusTime > 0f)
             {
                 _bonusTime -= Time.deltaTime;

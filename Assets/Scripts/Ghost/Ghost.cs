@@ -45,6 +45,11 @@ namespace Assets.Scripts.Ghost
 
         private void FixedUpdate()
         {
+            if (GameState.IsPaused)
+            {
+                return;
+            }
+
             var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, _speed);
             GetComponent<Rigidbody2D>().MovePosition(p);
 
