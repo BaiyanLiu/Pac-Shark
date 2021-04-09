@@ -9,6 +9,8 @@ namespace Assets.Scripts.Scenes
     {
         public const string BonusDots= "Bonus Dots";
         public const string GhostSpeed = "Ghost Speed";
+        public const string HighScore = "High Score";
+        public const string Score = "Score";
 
         public Slider BonusDotsSlider;
         public Slider GhostSpeedSlider;
