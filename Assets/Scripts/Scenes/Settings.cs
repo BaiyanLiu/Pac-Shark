@@ -16,6 +16,7 @@ namespace Assets.Scripts.Scenes
         public Slider GhostSpeedSlider;
         public Text BonusDotsValue;
         public Text GhostSpeedValue;
+        public Text HighScoreText;
 
         private int _bonusDots;
         private int _ghostSpeed;
@@ -32,6 +33,7 @@ namespace Assets.Scripts.Scenes
             }
             BonusDotsSlider.value = _bonusDots = PlayerPrefs.GetInt(BonusDots);
             GhostSpeedSlider.value  = _ghostSpeed = PlayerPrefs.GetInt(GhostSpeed);
+            HighScoreText.text = PlayerPrefs.GetInt(HighScore).ToString("D3");
         }
 
         public void OnBonusDotsChanged(float value)
@@ -44,6 +46,12 @@ namespace Assets.Scripts.Scenes
         {
             _ghostSpeed = Convert.ToInt16(value);
             GhostSpeedValue.text = _ghostSpeed + "%";
+        }
+
+        public void ResetHighScore()
+        {
+            PlayerPrefs.SetInt(HighScore, 0);
+            HighScoreText.text = "000";
         }
 
         public void Apply()
