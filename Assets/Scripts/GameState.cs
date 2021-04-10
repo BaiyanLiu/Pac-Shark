@@ -14,10 +14,11 @@ namespace Assets.Scripts
 
         public event EventHandler OnLevelChanged;
 
-        public static bool IsPaused { get; set; }
+        public static bool IsPaused { get; set; } = true;
 
         public Text ScoreText;
         public Text HighScoreText;
+        public Text CountdownText;
         public Image[] LivesImages;
         public int Lives;
         public GameObject[] Levels;
@@ -34,6 +35,7 @@ namespace Assets.Scripts
         private float _bonusTime;
         private int _level;
         private int _numDots;
+        private float _countdownTime;
 
         public static GameState GetGameState(GameObject gameObject)
         {
@@ -42,7 +44,6 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            IsPaused = false;
             UpdateHighScore();
             ActivateLevel();
             GhostSpeed = 0.2f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
@@ -50,6 +51,29 @@ namespace Assets.Scripts
 
         private void Update()
         {
+            if (_countdownTime > -1f)
+            {
+                _countdownTime -= Time.deltaTime;
+                var countdownTime = (int) (_countdownTime + 0.99f);
+                CountdownText.color = countdownTime switch
+                {
+                    1 => new Color32(34, 177, 76, 255),
+                    2 => new Color32(255, 242, 0, 255),
+                    3 => new Color32(255, 0, 0, 255),
+                    _ => CountdownText.color
+                };
+                if (countdownTime > 0)
+                {
+                    CountdownText.enabled = true;
+                    CountdownText.text = countdownTime.ToString();
+                }
+                else
+                {
+                    CountdownText.enabled = false;
+                }
+                IsPaused = CountdownText.enabled;
+            }
+
             if (IsPaused)
             {
                 return;
@@ -91,6 +115,7 @@ namespace Assets.Scripts
             Waypoints = Levels[_level].transform.Find("Waypoints").GetComponentsInChildren<Transform>()
                 .Where(t => t.name != "Waypoints").ToArray();
             _numDots = Levels[_level].transform.Find("Dots").childCount;
+            _countdownTime = 3;
         }
 
         public void DotEaten()
