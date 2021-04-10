@@ -23,5 +23,10 @@ namespace Assets.Scripts.Scenes
         {
             SceneManager.LoadScene("Game");
         }
+
+        public void MainMenu()
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 }

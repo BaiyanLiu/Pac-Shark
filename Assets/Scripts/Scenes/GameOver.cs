@@ -11,13 +11,18 @@ namespace Assets.Scripts.Scenes
 
         private void Start()
         {
-            ScoreTest.text = "Score: " + PlayerPrefs.GetInt(Settings.Score).ToString("D3");
-            HighScoreText.text = "High Score: " + PlayerPrefs.GetInt(Settings.HighScore).ToString("D3");
+            ScoreTest.text = PlayerPrefs.GetInt(Settings.Score).ToString("D3");
+            HighScoreText.text = PlayerPrefs.GetInt(Settings.HighScore).ToString("D3");
         }
 
         public void Restart()
         {
             SceneManager.LoadScene("Game");
+        }
+
+        public void MainMenu()
+        {
+            SceneManager.LoadScene("Main Menu");
         }
     }
 }

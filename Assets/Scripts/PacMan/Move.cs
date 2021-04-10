@@ -8,7 +8,6 @@ namespace Assets.Scripts.PacMan
 
         private GameState _gameState;
         private SpriteRenderer _renderer;
-        private Color _originalColor;
         private Vector2 _originalPosition;
         private float _invincibleTime;
         private float _flashTime;
@@ -17,7 +16,6 @@ namespace Assets.Scripts.PacMan
         {
             _gameState = GameState.GetGameState(gameObject);
             _renderer = gameObject.GetComponent<SpriteRenderer>();
-            _originalColor = _renderer.color;
             _originalPosition = transform.position;
             Reset();
 
@@ -52,11 +50,11 @@ namespace Assets.Scripts.PacMan
             {
                 if (_invincibleTime > 0f)
                 {
-                    _renderer.color = _renderer.color == _originalColor ? Color.black : _originalColor;
+                    _renderer.enabled = !_renderer.enabled;
                 }
                 else
                 {
-                    _renderer.color = _originalColor;
+                    _renderer.enabled = true;
                 }
                 _flashTime = 0.1f;
             }
