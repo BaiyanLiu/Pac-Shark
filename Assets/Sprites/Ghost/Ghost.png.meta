@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 438be787c7aa7aa4e82baf3fcaaee4e2
+guid: afa19ecc41953ad4e9e645743494f5d1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -14,9 +14,6 @@ TextureImporter:
   - first:
       213: 961504700816514905
     second: Ghost_3
-  - first:
-      213: -5178447075761725730
-    second: Ghost_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,8 +120,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 480
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,10 +139,10 @@ TextureImporter:
       name: Ghost_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 480
         y: 0
-        width: 128
-        height: 128
+        width: 480
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +160,10 @@ TextureImporter:
       name: Ghost_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 960
         y: 0
-        width: 128
-        height: 128
+        width: 480
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +181,10 @@ TextureImporter:
       name: Ghost_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 1440
         y: 0
-        width: 128
-        height: 128
+        width: 480
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

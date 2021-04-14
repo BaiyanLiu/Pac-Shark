@@ -97,7 +97,7 @@ namespace Assets.Scripts
             Lives += delta;
             for (var i = Lives; i < LivesImages.Length; i++)
             {
-                LivesImages[i].color = Color.black;
+                LivesImages[i].enabled = false;
             }
         }
 
