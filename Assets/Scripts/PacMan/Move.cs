@@ -8,6 +8,7 @@ namespace Assets.Scripts.PacMan
 
         private GameState _gameState;
         private SpriteRenderer _renderer;
+        private Animator _animator;
         private Vector2 _originalPosition;
         private float _invincibleTime;
         private float _flashTime;
@@ -15,7 +16,8 @@ namespace Assets.Scripts.PacMan
         private void Start()
         {
             _gameState = GameState.GetGameState(gameObject);
-            _renderer = gameObject.GetComponent<SpriteRenderer>();
+            _renderer = GetComponent<SpriteRenderer>();
+            _animator = GetComponent<Animator>();
             _originalPosition = transform.position;
             Reset();
 
@@ -94,8 +96,8 @@ namespace Assets.Scripts.PacMan
             }
 
             var dir = Dest - (Vector2) transform.position;
-            GetComponent<Animator>().SetFloat("DirX", dir.x);
-            GetComponent<Animator>().SetFloat("DirY", dir.y);
+            _animator.SetFloat("DirX", dir.x);
+            _animator.SetFloat("DirY", dir.y);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -116,7 +118,7 @@ namespace Assets.Scripts.PacMan
                     _gameState.UpdateLives(-1);
                     if (_gameState.IsDead)
                     {
-                        GetComponent<Animator>().SetBool("Dead", true);
+                        _animator.SetBool("Dead", true);
                     }
                     else
                     {

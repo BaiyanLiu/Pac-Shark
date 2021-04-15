@@ -13,6 +13,7 @@ namespace Assets.Scripts.Ghost
         protected Vector2 OriginalPosition;
         
         private SpriteRenderer _renderer;
+        private Animator _animator;
         private Color _originalColor;
         private float _speed;
 
@@ -20,7 +21,8 @@ namespace Assets.Scripts.Ghost
         {
             GameState = GameState.GetGameState(gameObject);
             OriginalPosition = transform.position;
-            _renderer = gameObject.GetComponent<SpriteRenderer>();
+            _renderer = GetComponent<SpriteRenderer>();
+            _animator = GetComponent<Animator>();
             _originalColor = _renderer.color;
 
             _speed = GameState.GhostSpeed;
@@ -40,7 +42,16 @@ namespace Assets.Scripts.Ghost
 
         private void Update()
         {
-            _renderer.color = GameState.IsBonusTime || IsDead ? AltColor : _originalColor;
+            if (GameState.IsBonusTime || IsDead)
+            {
+                _renderer.color = AltColor;
+                _animator.SetBool("Bonus", true);
+            }
+            else
+            {
+                _renderer.color = _originalColor;
+                _animator.SetBool("Bonus", false);
+            }
         }
 
         private void FixedUpdate()
