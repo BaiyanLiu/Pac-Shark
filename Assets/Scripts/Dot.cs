@@ -5,9 +5,6 @@ namespace Assets.Scripts
 {
     public class Dot : MonoBehaviour
     {
-        public Sprite SmallSprite;
-        public Sprite BigSprite;
-
         private GameState _gameState;
         private bool _isBonus;
 
@@ -26,7 +23,7 @@ namespace Assets.Scripts
         private void Reset()
         {
             _isBonus = Random.value < (0.05f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
-            GetComponent<SpriteRenderer>().sprite = _isBonus ? BigSprite : SmallSprite;
+            gameObject.transform.localScale = _isBonus ? new Vector2(0.2f, 0.2f) : new Vector2(0.1f, 0.1f);
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
