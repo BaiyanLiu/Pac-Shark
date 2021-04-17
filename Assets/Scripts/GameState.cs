@@ -105,6 +105,7 @@ namespace Assets.Scripts
         {
             _bonusTime = 3f;
         }
+
         private void ActivateLevel()
         {
             foreach (var level in Levels)

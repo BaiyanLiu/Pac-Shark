@@ -5,6 +5,8 @@ namespace Assets.Scripts
 {
     public class Dot : MonoBehaviour
     {
+        public bool CanBeBonus;
+
         private GameState _gameState;
         private bool _isBonus;
 
@@ -22,7 +24,7 @@ namespace Assets.Scripts
 
         private void Reset()
         {
-            _isBonus = Random.value < (0.05f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
+            _isBonus = CanBeBonus && Random.value < (0.5f * PlayerPrefs.GetInt(Settings.BonusDots) / 100f);
             gameObject.transform.localScale = _isBonus ? new Vector2(0.2f, 0.2f) : new Vector2(0.1f, 0.1f);
         }
 
