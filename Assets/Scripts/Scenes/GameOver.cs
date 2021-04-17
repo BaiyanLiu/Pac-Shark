@@ -11,8 +11,8 @@ namespace Assets.Scripts.Scenes
 
         private void Start()
         {
-            ScoreTest.text = PlayerPrefs.GetInt(Settings.Score).ToString("D3");
-            HighScoreText.text = PlayerPrefs.GetInt(Settings.HighScore).ToString("D3");
+            ScoreTest.text = PlayerPrefs.GetInt(Settings.Score).ToString("D4");
+            HighScoreText.text = PlayerPrefs.GetInt(Settings.HighScore).ToString("D4");
         }
 
         public void Restart()

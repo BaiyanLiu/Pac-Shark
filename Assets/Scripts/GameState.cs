@@ -121,7 +121,7 @@ namespace Assets.Scripts
         public void DotEaten()
         {
             _score++;
-            ScoreText.text = _score.ToString("D3");
+            ScoreText.text = _score.ToString("D4");
             PlayerPrefs.SetInt(Settings.Score, _score);
             if (_score > _highScore)
             {
@@ -139,7 +139,7 @@ namespace Assets.Scripts
         private void UpdateHighScore()
         {
             _highScore = PlayerPrefs.GetInt(Settings.HighScore);
-            HighScoreText.text = "H:" + _highScore.ToString("D3");
+            HighScoreText.text = "H:" + _highScore.ToString("D4");
         }
 
         private void NextLevel()
