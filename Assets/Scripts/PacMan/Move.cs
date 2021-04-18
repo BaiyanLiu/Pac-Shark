@@ -27,7 +27,7 @@ namespace Assets.Scripts.PacMan
             };
             _gameState.OnDie += (sender, args) =>
             {
-                Dest = new Vector2(transform.position.x, 20f);
+                Dest = new Vector2(transform.position.x, GameState.Max.y + 1);
             };
         }
 
