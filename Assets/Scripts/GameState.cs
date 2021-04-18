@@ -47,7 +47,7 @@ namespace Assets.Scripts
         {
             UpdateHighScore();
             ActivateLevel();
-            GhostSpeed = 0.2f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
+            GhostSpeed = 0.15f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
         }
 
         private void Update()
