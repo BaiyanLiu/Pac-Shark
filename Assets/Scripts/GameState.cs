@@ -13,6 +13,7 @@ namespace Assets.Scripts
         public static readonly Vector2Int Max = new Vector2Int(15, 13);
 
         public event EventHandler OnLevelChanged;
+        public event EventHandler OnDie;
 
         public static bool IsPaused { get; set; } = true;
 
@@ -98,6 +99,10 @@ namespace Assets.Scripts
             for (var i = Lives; i < LivesImages.Length; i++)
             {
                 LivesImages[i].enabled = false;
+            }
+            if (IsDead)
+            {
+                OnDie?.Invoke(this, EventArgs.Empty);
             }
         }
 

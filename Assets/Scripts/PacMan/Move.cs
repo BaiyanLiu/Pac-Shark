@@ -25,6 +25,10 @@ namespace Assets.Scripts.PacMan
             {
                 Reset();
             };
+            _gameState.OnDie += (sender, args) =>
+            {
+                Dest = new Vector2(transform.position.x, 20f);
+            };
         }
 
         private void Reset()
@@ -64,13 +68,18 @@ namespace Assets.Scripts.PacMan
 
         private void FixedUpdate()
         {
-            if (GameState.IsPaused || _gameState.IsDead)
+            if (GameState.IsPaused)
             {
                 return;
             }
 
-            var p = Vector2.MoveTowards(transform.position, Dest, GameState.PacManSpeed);
+            var p = Vector2.MoveTowards(transform.position, Dest, _gameState.IsDead ? 0.02f : GameState.PacManSpeed);
             GetComponent<Rigidbody2D>().MovePosition(p);
+
+            if (_gameState.IsDead)
+            {
+                return;
+            }
 
             if ((Vector2) transform.position == Dest)
             {
