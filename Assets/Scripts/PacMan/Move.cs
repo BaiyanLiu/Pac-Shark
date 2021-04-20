@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -13,6 +12,7 @@ namespace Assets.Scripts.PacMan
         private Vector2 _originalPosition;
         private float _invincibleTime;
         private float _flashTime;
+        private Vector2 _dir = Vector2.right;
 
         private void Start()
         {
@@ -101,19 +101,24 @@ namespace Assets.Scripts.PacMan
 
                 if (vertical > 0.1f && IsValid(Vector2.up, 30))
                 {
-                    Dest = (Vector2) transform.position + Vector2.up;
+                    _dir = Vector2.up;
                 }
-                if (horizontal > 0.1f && IsValid(Vector2.right, 30))
+                else if (horizontal > 0.1f && IsValid(Vector2.right, 30))
                 {
-                    Dest = (Vector2) transform.position + Vector2.right;
+                    _dir = Vector2.right;
                 }
-                if (vertical < -0.1f && IsValid(Vector2.down, 30))
+                else if (vertical < -0.1f && IsValid(Vector2.down, 30))
                 {
-                    Dest = (Vector2) transform.position + Vector2.down;
+                    _dir = Vector2.down;
                 }
-                if (horizontal < -0.1f && IsValid(Vector2.left, 30))
+                else if (horizontal < -0.1f && IsValid(Vector2.left, 30))
                 {
-                    Dest = (Vector2) transform.position + Vector2.left;
+                    _dir = Vector2.left;
+                }
+
+                if (IsValid(_dir, 30))
+                {
+                    Dest = (Vector2) transform.position + _dir;
                 }
             }
 
