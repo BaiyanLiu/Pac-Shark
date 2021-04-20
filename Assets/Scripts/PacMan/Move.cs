@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -85,6 +86,18 @@ namespace Assets.Scripts.PacMan
             {
                 var horizontal = Input.GetAxisRaw("Horizontal");
                 var vertical = Input.GetAxisRaw("Vertical");
+
+                if (Input.touchCount > 0)
+                {
+                    var touch = Input.GetTouch(0);
+                    if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
+                    {
+                        var touchPos = Camera.main.ScreenToWorldPoint(new Vector2(touch.position.x, touch.position.y));
+                        var touchDelta = touchPos - transform.position;
+                        horizontal = touchDelta.x;
+                        vertical = touchDelta.y;
+                    }
+                }
 
                 if (vertical > 0.1f && IsValid(Vector2.up, 30))
                 {
