@@ -16,6 +16,7 @@ namespace Assets.Scripts.Ghost
         private Animator _animator;
         private Color _originalColor;
         private float _speed;
+        private float _flashTime;
 
         private void Start()
         {
@@ -51,6 +52,20 @@ namespace Assets.Scripts.Ghost
             {
                 _renderer.color = _originalColor;
                 _animator.SetBool("Bonus", false);
+            }
+
+            if (IsDead)
+            {
+                _flashTime -= Time.deltaTime;
+                if (_flashTime <= 0f)
+                {
+                    _renderer.enabled = !_renderer.enabled;
+                    _flashTime = 0.1f;
+                }
+            }
+            else
+            {
+                _renderer.enabled = true;
             }
         }
 

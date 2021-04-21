@@ -48,23 +48,16 @@ namespace Assets.Scripts.PacMan
             if (_invincibleTime > 0f)
             {
                 _invincibleTime -= Time.deltaTime;
-            }
-            if (_flashTime > 0f)
-            {
                 _flashTime -= Time.deltaTime;
-            }
-
-            if (_flashTime <= 0f)
-            {
-                if (_invincibleTime > 0f)
+                if (_flashTime <= 0f)
                 {
                     _renderer.enabled = !_renderer.enabled;
+                    _flashTime = 0.1f;
                 }
-                else
-                {
-                    _renderer.enabled = true;
-                }
-                _flashTime = 0.1f;
+            }
+            else
+            {
+                _renderer.enabled = true;
             }
         }
 
@@ -153,6 +146,7 @@ namespace Assets.Scripts.PacMan
             {
                 if (_gameState.IsBonusTime)
                 {
+                    _gameState.GhostEaten();
                     collision.gameObject.GetComponent<Ghost.Ghost>().Die();
                 }
                 else if (_invincibleTime <= 0f)

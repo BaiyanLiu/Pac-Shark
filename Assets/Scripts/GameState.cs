@@ -135,19 +135,28 @@ namespace Assets.Scripts
 
         public void DotEaten()
         {
-            _score++;
+            UpdateScore(1);
+            _numDots--;
+            if (_numDots == 0)
+            {
+                NextLevel();
+            }
+        }
+
+        public void GhostEaten()
+        {
+            UpdateScore(10);
+        }
+
+        private void UpdateScore(int delta)
+        {
+            _score += delta;
             ScoreText.text = _score.ToString("D4");
             PlayerPrefs.SetInt(Settings.Score, _score);
             if (_score > _highScore)
             {
                 PlayerPrefs.SetInt(Settings.HighScore, _score);
                 UpdateHighScore();
-            }
-
-            _numDots--;
-            if (_numDots == 0)
-            {
-                NextLevel();
             }
         }
 
