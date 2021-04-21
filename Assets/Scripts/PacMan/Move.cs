@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -90,28 +91,42 @@ namespace Assets.Scripts.PacMan
                 if (Input.touchCount > 0)
                 {
                     var touch = Input.GetTouch(0);
-                    if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
+                    if (touch.phase == TouchPhase.Began)
                     {
                         var touchPos = Camera.main.ScreenToWorldPoint(new Vector2(touch.position.x, touch.position.y));
-                        var touchDelta = touchPos - transform.position;
-                        horizontal = touchDelta.x;
-                        vertical = touchDelta.y;
+                        var touchDir = touchPos - transform.position;
+                        horizontal = touchDir.x;
+                        vertical = touchDir.y;
+                    } 
+                    else if (touch.phase == TouchPhase.Moved)
+                    {
+                        horizontal = touch.deltaPosition.x;
+                        vertical = touch.deltaPosition.y;
+                    }
+
+                    if (Math.Abs(horizontal) > Math.Abs(vertical))
+                    {
+                        vertical = 0f;
+                    }
+                    else
+                    {
+                        horizontal = 0f;
                     }
                 }
 
-                if (vertical > 0.1f && IsValid(Vector2.up, 30))
+                if (vertical > 0.9f && IsValid(Vector2.up, 30))
                 {
                     _dir = Vector2.up;
                 }
-                else if (horizontal > 0.1f && IsValid(Vector2.right, 30))
+                else if (horizontal > 0.9f && IsValid(Vector2.right, 30))
                 {
                     _dir = Vector2.right;
                 }
-                else if (vertical < -0.1f && IsValid(Vector2.down, 30))
+                else if (vertical < -0.9f && IsValid(Vector2.down, 30))
                 {
                     _dir = Vector2.down;
                 }
-                else if (horizontal < -0.1f && IsValid(Vector2.left, 30))
+                else if (horizontal < -0.9f && IsValid(Vector2.left, 30))
                 {
                     _dir = Vector2.left;
                 }

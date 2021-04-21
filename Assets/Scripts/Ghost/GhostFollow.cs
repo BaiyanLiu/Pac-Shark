@@ -11,6 +11,7 @@ namespace Assets.Scripts.Ghost
         public GameObject PacMan;
 
         private Vector2 _dest;
+        private readonly LinkedList<Vector2> _path = new LinkedList<Vector2>();
 
         protected override void OnStart()
         {
@@ -25,6 +26,7 @@ namespace Assets.Scripts.Ghost
         private void Reset()
         {
             _dest = OriginalPosition;
+            _path.Clear();
         }
 
         protected override Vector2 NextPos => _dest;
@@ -38,18 +40,24 @@ namespace Assets.Scripts.Ghost
 
             if ((Vector2) transform.position == _dest)
             {
-                var dest = GameState.IsBonusTime ? OriginalPosition : PacMan.GetComponent<Move>().Dest;
-                dest.x = Math.Max(dest.x, GameState.Min.x);
-                dest.x = Math.Min(dest.x, GameState.Max.x);
-                _dest = ShortestPath(dest);
+                var target = GameState.IsBonusTime ? OriginalPosition : PacMan.GetComponent<Move>().Dest;
+                target.x = Math.Max(target.x, GameState.Min.x);
+                target.x = Math.Min(target.x, GameState.Max.x);
+                if (_path.Count == 0)
+                {
+                    ShortestPath(target);
+                }
+                _dest = _path.First();
+                _path.RemoveFirst();
             }
         }
 
-        protected Vector2 ShortestPath(Vector2 dest)
+        protected void ShortestPath(Vector2 target)
         {
-            if ((Vector2) transform.position == dest)
+            if ((Vector2) transform.position == target)
             {
-                return transform.position;
+                _path.AddFirst(transform.position);
+                return;
             }
 
             var dist = new Dictionary<Vector2, int>();
@@ -65,20 +73,25 @@ namespace Assets.Scripts.Ghost
             }
             var pos = Vector2Int.RoundToInt(transform.position);
             dist[pos] = 0;
-            score[pos] = Vector2.Distance(transform.position, dest);
+            score[pos] = Vector2.Distance(transform.position, target);
             var openNodes = new Dictionary<Vector2, float>(score);
             var cameFrom = new Dictionary<Vector2, Vector2>();
 
             while (openNodes.Count > 0)
             {
                 var curr = openNodes.OrderBy(x => x.Value).First().Key;
-                if (curr == dest)
+                if (curr == target)
                 {
                     while (cameFrom.ContainsKey(curr))
                     {
+                        _path.AddFirst(curr);
+                        if (_path.Count > 10)
+                        {
+                            _path.RemoveLast();
+                        }
                         if ((Vector2) transform.position == cameFrom[curr])
                         {
-                            return curr;
+                            return;
                         }
                         curr = cameFrom[curr];
                     }
@@ -97,13 +110,13 @@ namespace Assets.Scripts.Ghost
                     if (altDist < dist[neighbor])
                     {
                         dist[neighbor] = altDist;
-                        openNodes[neighbor] = score[neighbor] = altDist + Vector2.Distance(neighbor, dest);
+                        openNodes[neighbor] = score[neighbor] = altDist + Vector2.Distance(neighbor, target);
                         cameFrom[neighbor] = curr;
                     }
                 }
             }
 
-            return Vector2.zero;
+            _path.AddFirst(Vector2.zero);
         }
 
         private int Dist(Vector2 from, Vector2 to)
