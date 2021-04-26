@@ -10,6 +10,7 @@ namespace Assets.Scripts.Ghost
 
         protected override void OnStart()
         {
+            base.OnStart();
             Reset();
         }
 

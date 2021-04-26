@@ -15,8 +15,10 @@ namespace Assets.Scripts.PacMan
         private float _flashTime;
         private Vector2 _dir = Vector2.right;
 
-        private void Start()
+        protected override void OnStart()
         {
+            base.OnStart();
+
             _gameState = GameState.GetGameState(gameObject);
             _renderer = GetComponent<SpriteRenderer>();
             _animator = GetComponent<Animator>();
@@ -69,7 +71,7 @@ namespace Assets.Scripts.PacMan
             }
 
             var p = Vector2.MoveTowards(transform.position, Dest, _gameState.IsDead ? 0.02f : GameState.PacManSpeed);
-            GetComponent<Rigidbody2D>().MovePosition(p);
+            Rigidbody.MovePosition(p);
 
             if (_gameState.IsDead)
             {
@@ -142,12 +144,18 @@ namespace Assets.Scripts.PacMan
                 return;
             }
 
-            if (collision.name.StartsWith("Ghost") && !collision.gameObject.GetComponent<Ghost.Ghost>().IsDead)
+            if (collision.name.StartsWith("Ghost"))
             {
+                var ghost = collision.gameObject.GetComponent<Ghost.Ghost>();
+                if (ghost.IsDead)
+                {
+                    return;
+                }
+
                 if (_gameState.IsBonusTime)
                 {
                     _gameState.GhostEaten();
-                    collision.gameObject.GetComponent<Ghost.Ghost>().Die();
+                    ghost.Die();
                 }
                 else if (_invincibleTime <= 0f)
                 {

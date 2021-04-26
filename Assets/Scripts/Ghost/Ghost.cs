@@ -18,8 +18,10 @@ namespace Assets.Scripts.Ghost
         private float _speed;
         private float _flashTime;
 
-        private void Start()
+        protected override void OnStart()
         {
+            base.OnStart();
+
             GameState = GameState.GetGameState(gameObject);
             OriginalPosition = transform.position;
             _renderer = GetComponent<SpriteRenderer>();
@@ -33,11 +35,7 @@ namespace Assets.Scripts.Ghost
                 transform.position = OriginalPosition;
                 OnLevelChanged();
             };
-
-            OnStart();
         }
-
-        protected virtual void OnStart() {}
 
         protected virtual void OnLevelChanged() {}
 
@@ -77,7 +75,7 @@ namespace Assets.Scripts.Ghost
             }
 
             var p = Vector2.MoveTowards(transform.position, IsDead ? OriginalPosition : NextPos, _speed);
-            GetComponent<Rigidbody2D>().MovePosition(p);
+            Rigidbody.MovePosition(p);
 
             if (!GameState.IsBonusTime && IsDead && p == OriginalPosition)
             {

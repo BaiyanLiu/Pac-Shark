@@ -10,11 +10,14 @@ namespace Assets.Scripts.Ghost
     {
         public GameObject PacMan;
 
+        private Move _pacManMove;
         private Vector2 _dest;
         private readonly LinkedList<Vector2> _path = new LinkedList<Vector2>();
 
         protected override void OnStart()
         {
+            base.OnStart();
+            _pacManMove = PacMan.GetComponent<Move>();
             Reset();
         }
 
@@ -40,7 +43,7 @@ namespace Assets.Scripts.Ghost
 
             if ((Vector2) transform.position == _dest)
             {
-                var target = GameState.IsBonusTime ? OriginalPosition : PacMan.GetComponent<Move>().Dest;
+                var target = GameState.IsBonusTime ? OriginalPosition : _pacManMove.Dest;
                 target.x = Math.Max(target.x, GameState.Min.x);
                 target.x = Math.Min(target.x, GameState.Max.x);
                 if (_path.Count == 0)
