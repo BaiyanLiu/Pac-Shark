@@ -94,6 +94,7 @@ namespace Assets.Scripts.Ghost
                         }
                         if ((Vector2) transform.position == cameFrom[curr])
                         {
+                            CollapsePath();
                             return;
                         }
                         curr = cameFrom[curr];
@@ -125,6 +126,43 @@ namespace Assets.Scripts.Ghost
         private int Dist(Vector2 from, Vector2 to)
         {
             return Math.Abs((int) (from.x - to.x)) + Math.Abs((int) (from.y - to.y));
+        }
+
+        private void CollapsePath()
+        {
+            var path = new List<Vector2>();
+
+            var collapsedItem = _path.First();
+            _path.RemoveFirst();
+            var dir = collapsedItem - (Vector2) transform.position;
+            var collapseX = Math.Abs(dir.y) > 0.1f;
+            var collapseY = Math.Abs(dir.x) > 0.1f;
+
+            foreach (var item in _path)
+            {
+                if (Math.Abs(item.x - collapsedItem.x) < 0.1f && collapseX)
+                {
+                    collapsedItem.y = item.y;
+                }
+                else if (Math.Abs(item.y - collapsedItem.y) < 0.1f && collapseY)
+                {
+                    collapsedItem.x = item.x;
+                }
+                else
+                {
+                    path.Add(collapsedItem);
+                    collapsedItem = item;
+                    collapseX = !collapseX;
+                    collapseY = !collapseY;
+                }
+            }
+            path.Add(collapsedItem);
+
+            _path.Clear();
+            foreach (var item in path)
+            {
+                _path.AddLast(item);
+            }
         }
 
         public override void OnDie()
