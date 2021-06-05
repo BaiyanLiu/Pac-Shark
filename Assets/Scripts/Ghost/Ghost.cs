@@ -80,7 +80,7 @@ namespace Assets.Scripts.Ghost
             if (!GameState.IsBonusTime && IsDead && p == OriginalPosition)
             {
                 IsDead = false;
-                _speed *= 2;
+                _speed = GameState.GhostSpeed;
             }
             else if (!IsDead)
             {
@@ -95,7 +95,7 @@ namespace Assets.Scripts.Ghost
         public void Die()
         {
             IsDead = true;
-            _speed /= 2;
+            _speed = GameState.GhostSpeed / 2f;
             OnDie();
         }
 
