@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts.Ghost
 {
+    [UsedImplicitly]
     public class GhostWaypoints : Ghost
     {
         private int _currWaypoint;

@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -21,6 +22,7 @@ namespace Assets.Scripts.Scenes
         private int _bonusDots;
         private int _ghostSpeed;
 
+        [UsedImplicitly]
         private void Start()
         {
             if (!PlayerPrefs.HasKey(BonusDots))
@@ -36,24 +38,28 @@ namespace Assets.Scripts.Scenes
             HighScoreText.text = PlayerPrefs.GetInt(HighScore).ToString("D4");
         }
 
+        [UsedImplicitly]
         public void OnBonusDotsChanged(float value)
         {
             _bonusDots = Convert.ToInt16(value);
             BonusDotsValue.text = _bonusDots + "%";
         }
 
+        [UsedImplicitly]
         public void OnGhostSpeedChanged(float value)
         {
             _ghostSpeed = Convert.ToInt16(value);
             GhostSpeedValue.text = _ghostSpeed + "%";
         }
 
+        [UsedImplicitly]
         public void ResetHighScore()
         {
             PlayerPrefs.SetInt(HighScore, 0);
             HighScoreText.text = "0000";
         }
 
+        [UsedImplicitly]
         public void Apply()
         {
             PlayerPrefs.SetInt(BonusDots, _bonusDots);
@@ -61,6 +67,7 @@ namespace Assets.Scripts.Scenes
             SceneManager.LoadScene("Main Menu");
         }
 
+        [UsedImplicitly]
         public void Cancel()
         {
             SceneManager.LoadScene("Main Menu");

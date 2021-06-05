@@ -1,4 +1,5 @@
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -8,6 +9,7 @@ namespace Assets.Scripts
         protected Rigidbody2D Rigidbody;
         protected CircleCollider2D Collider;
 
+        [UsedImplicitly]
         private void Start()
         {
             Rigidbody = GetComponent<Rigidbody2D>();

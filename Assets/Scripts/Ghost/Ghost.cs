@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using Color = UnityEngine.Color;
 
@@ -39,6 +40,7 @@ namespace Assets.Scripts.Ghost
 
         protected virtual void OnLevelChanged() {}
 
+        [UsedImplicitly]
         private void Update()
         {
             if (GameState.IsBonusTime || IsDead)
@@ -67,6 +69,7 @@ namespace Assets.Scripts.Ghost
             }
         }
 
+        [UsedImplicitly]
         private void FixedUpdate()
         {
             if (GameState.IsPaused)

@@ -1,4 +1,5 @@
 using System;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts.PacMan
@@ -40,6 +41,7 @@ namespace Assets.Scripts.PacMan
             Dest =  transform.position = _originalPosition;
         }
 
+        [UsedImplicitly]
         private void Update()
         {
             if (GameState.IsPaused)
@@ -63,6 +65,7 @@ namespace Assets.Scripts.PacMan
             }
         }
 
+        [UsedImplicitly]
         private void FixedUpdate()
         {
             if (GameState.IsPaused)
@@ -137,6 +140,7 @@ namespace Assets.Scripts.PacMan
             _animator.SetFloat("DirY", dir.y);
         }
 
+        [UsedImplicitly]
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (_gameState.IsDead)

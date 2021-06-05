@@ -2,10 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Assets.Scripts.PacMan;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts.Ghost
 {
+    [UsedImplicitly]
     public class GhostFollow : Ghost
     {
         public GameObject PacMan;

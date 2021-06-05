@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Assets.Scripts.Scenes;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -43,6 +44,7 @@ namespace Assets.Scripts
             return gameObject.scene.GetRootGameObjects().First(o => o.name == "Canvas").GetComponent<GameState>();
         }
 
+        [UsedImplicitly]
         private void Start()
         {
             if (PlayerPrefs.GetInt(Settings.BonusDots) == 0)
@@ -59,6 +61,7 @@ namespace Assets.Scripts
             GhostSpeed = 0.15f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;
         }
 
+        [UsedImplicitly]
         private void Update()
         {
             if (_countdownTime > -1f)

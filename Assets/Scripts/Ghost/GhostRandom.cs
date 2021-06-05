@@ -1,7 +1,9 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts.Ghost
 {
+    [UsedImplicitly]
     public class GhostRandom : Ghost
     {
         private Vector2 _dest;

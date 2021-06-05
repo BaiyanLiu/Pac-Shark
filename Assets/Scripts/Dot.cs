@@ -1,4 +1,5 @@
 using Assets.Scripts.Scenes;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -10,6 +11,7 @@ namespace Assets.Scripts
         private GameState _gameState;
         private bool _isBonus;
 
+        [UsedImplicitly]
         void Start()
         {
             _gameState = GameState.GetGameState(gameObject);
@@ -28,6 +30,7 @@ namespace Assets.Scripts
             gameObject.transform.localScale = _isBonus ? new Vector2(0.2f, 0.2f) : new Vector2(0.1f, 0.1f);
         }
 
+        [UsedImplicitly]
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.name == "PacMan")
