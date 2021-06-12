@@ -47,7 +47,6 @@ namespace Assets.Scripts
         [UsedImplicitly]
         private void Start()
         {
-            Settings.Init();
             UpdateHighScore();
             ActivateLevel();
             GhostSpeed = 0.15f * PlayerPrefs.GetInt(Settings.GhostSpeed) / 100f;

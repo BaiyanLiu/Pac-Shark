@@ -12,6 +12,7 @@ namespace Assets.Scripts.Scenes
         public const string GhostSpeed = "Ghost Speed";
         public const string HighScore = "High Score";
         public const string Score = "Score";
+        public const string SkipIntro = "SkipIntro";
 
         public Slider BonusDotsSlider;
         public Slider GhostSpeedSlider;
@@ -22,22 +23,9 @@ namespace Assets.Scripts.Scenes
         private int _bonusDots;
         private int _ghostSpeed;
 
-        public static void Init()
-        {
-            if (!PlayerPrefs.HasKey(BonusDots))
-            {
-                PlayerPrefs.SetInt(BonusDots, 100);
-            }
-            if (!PlayerPrefs.HasKey(GhostSpeed))
-            {
-                PlayerPrefs.SetInt(GhostSpeed, 100);
-            }
-        }
-
         [UsedImplicitly]
         private void Start()
         {
-            Init();
             BonusDotsSlider.value = _bonusDots = PlayerPrefs.GetInt(BonusDots);
             GhostSpeedSlider.value  = _ghostSpeed = PlayerPrefs.GetInt(GhostSpeed);
             HighScoreText.text = PlayerPrefs.GetInt(HighScore).ToString("D4");
