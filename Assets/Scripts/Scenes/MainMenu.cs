@@ -26,19 +26,7 @@ namespace Assets.Scripts.Scenes
         [UsedImplicitly]
         public void StartGame()
         {
-            if (PlayerPrefs.GetInt(Scenes.Settings.SkipIntro) == 0)
-            {
-                Intro();
-            }
-            else
-            {
-                SceneManager.LoadScene("Game");
-            }
-        }
-
-        public void Intro()
-        {
-            SceneManager.LoadScene("Intro");
+            SceneManager.LoadScene(PlayerPrefs.GetInt(Scenes.Settings.SkipIntro) == 0 ? "Intro" : "Game");
         }
 
         [UsedImplicitly]
