@@ -22,8 +22,7 @@ namespace Assets.Scripts.Scenes
         private int _bonusDots;
         private int _ghostSpeed;
 
-        [UsedImplicitly]
-        private void Start()
+        public static void Init()
         {
             if (!PlayerPrefs.HasKey(BonusDots))
             {
@@ -33,6 +32,12 @@ namespace Assets.Scripts.Scenes
             {
                 PlayerPrefs.SetInt(GhostSpeed, 100);
             }
+        }
+
+        [UsedImplicitly]
+        private void Start()
+        {
+            Init();
             BonusDotsSlider.value = _bonusDots = PlayerPrefs.GetInt(BonusDots);
             GhostSpeedSlider.value  = _ghostSpeed = PlayerPrefs.GetInt(GhostSpeed);
             HighScoreText.text = PlayerPrefs.GetInt(HighScore).ToString("D4");
